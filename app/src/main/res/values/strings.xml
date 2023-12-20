@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Fire Dating</string>
+    <string name="app_name">Cupid</string>
+    <string name="app_quote">Swipe once, love for a lifetime</string>
 </resources>

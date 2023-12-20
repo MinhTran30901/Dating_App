@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="tinder_pink">#FD3A73</color>
-    <color name="tinder_red">#AA0234</color>
+    <color name="tinder_red_500">#E6535D</color>
+    <color name="tinder_red_400">#EB757D</color>
+    <color name="tinder_red_300">#F0989E</color>
+    <color name="tinder_pink">#E368A4</color>
 </resources>

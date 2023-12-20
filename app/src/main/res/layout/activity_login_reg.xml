@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +7,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -16,7 +16,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
+                android:background="@drawable/gradient_background"
                 android:orientation="vertical"
                 android:paddingLeft="25dp"
                 android:paddingTop="50dp"
@@ -30,15 +30,25 @@
                         android:layout_width="218dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/logo"/>
+                        android:src="@drawable/cupid"/>
                     <TextView
+                        android:id="@+id/appTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/app_name"
-                        android:textSize="23sp"
-                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textStyle="italic"
                         android:layout_gravity="center_horizontal"
-                        android:textColor="@color/tinder_pink"/>
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/appQuote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_quote"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"/>
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/loginBtn"
                         android:layout_width="match_parent"
@@ -67,16 +77,10 @@
             </LinearLayout>
 
         </ScrollView>
+
+
     </RelativeLayout>
     
-    <ProgressBar
-        android:id="@+id/prgBar"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:indeterminateTint="@color/tinder_pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
